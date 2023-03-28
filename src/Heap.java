@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Heap<E,T extends Comparator<E>>{
-    ArrayList<E> heap = new ArrayList<>();
+    ArrayList<E> heap;
     T comparator;
     public Heap(ArrayList<E> heap,T comparator){
         this.heap=heap;

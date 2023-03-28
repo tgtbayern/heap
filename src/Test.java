@@ -1,27 +1,28 @@
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Comparator;
 
-public class helper {
-    public static void main(String args[]){
+public class Test {
+    public static void start(){
         Employee a=new Employee("a",500);
         Employee b=new Employee("b",400);
         Employee c=new Employee("c",300);
         Employee d=new Employee("d",200);
         Employee e=new Employee("e",100);
         ArrayList<Employee> array=new ArrayList<>();
-        ArrayList<Employee> array1;
-
         CompareForPayRate comparator=new CompareForPayRate();
-        Heap<Employee,CompareForPayRate> heap=new Heap(array,comparator);
-        heap.insert(a);
-        heap.insert(e);
-        heap.insert(d);
-        heap.insert(c);
-        heap.insert(b);
+        //CompareForName comparator=new CompareForName();
+        PriorityQueue priorityQueue=new PriorityQueue<>(array,comparator);
+        ArrayList<Employee> sort;
+
+
+        //Heap<Employee,CompareForPayRate> heap=new Heap(array,comparator);
+        priorityQueue.insert(a);
+        priorityQueue.insert(e);
+        priorityQueue.insert(d);
+        priorityQueue.insert(c);
+        priorityQueue.insert(b);
 
 
         try {
@@ -33,18 +34,17 @@ public class helper {
                 double salary = Double.parseDouble(fields[1]);
                 Employee employee = new Employee(name, salary);
                 // do something with the employee object
-                heap.insert(employee);
+                priorityQueue.insert(employee);
             }
-            array1=heap.sort();
-            for (int i=0;i<=array1.size()-1;i++)
-                System.out.println(array1.get(i).payRate);
+            sort=priorityQueue.sort();
+            for (int i=0;i<=sort.size()-1;i++)
+                System.out.println(sort.get(i).name+" "+sort.get(i).payRate);
             reader.close();
         } catch (
                 IOException error) {
             error.printStackTrace();
         }
     }
-
 }
 
         
