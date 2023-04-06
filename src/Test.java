@@ -15,16 +15,17 @@ public class Test {
         //CompareForName comparator=new CompareForName();
         PriorityQueue priorityQueue=new PriorityQueue<>(array,comparator);
         ArrayList<Employee> sort;
-
-
         //Heap<Employee,CompareForPayRate> heap=new Heap(array,comparator);
         priorityQueue.insert(a);
         priorityQueue.insert(e);
         priorityQueue.insert(d);
         priorityQueue.insert(c);
         priorityQueue.insert(b);
+        creat(priorityQueue);
+        display(priorityQueue);
+    }
 
-
+    public static PriorityQueue  creat(PriorityQueue priorityQueue){
         try {
             BufferedReader reader = new BufferedReader(new FileReader("employee.txt"));
             String line;
@@ -36,14 +37,19 @@ public class Test {
                 // do something with the employee object
                 priorityQueue.insert(employee);
             }
-            sort=priorityQueue.sort();
-            for (int i=0;i<=sort.size()-1;i++)
-                System.out.println(sort.get(i).name+" "+sort.get(i).payRate);
             reader.close();
         } catch (
                 IOException error) {
             error.printStackTrace();
         }
+        return priorityQueue;
+    }
+
+    public static void display(PriorityQueue priorityQueue){
+        ArrayList<Employee> sort;
+        sort=priorityQueue.sort();
+        for (int i=0;i<=sort.size()-1;i++)
+            System.out.println(sort.get(i).name+" "+sort.get(i).payRate);
     }
 }
 

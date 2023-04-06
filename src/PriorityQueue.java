@@ -10,15 +10,12 @@ public class PriorityQueue<E,T extends Comparator<E>> {
         this.comparator=comparator;
         heap=new Heap<>(array,comparator);
     }
-
     public void insert(E element){
         heap.insert(element);
     }
-
     public void delete(int i){
         heap.delete(i);
     }
-
     public boolean isEmpty(){
         return heap.isEmpty();
     }
