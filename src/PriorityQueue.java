@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class PriorityQueue<E,T extends Comparator<E>> {
+public class PriorityQueue<E,T extends Comparator<E>> implements GenericPriorityQueue<E,T> {
     ArrayList<E> array;
     T comparator;
     Heap heap;

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class Heap<E,T extends Comparator<E>>{
+public class Heap<E,T extends Comparator<E>> implements GenericHeap<E,T>{
     ArrayList<E> heap;
     T comparator;
     public Heap(ArrayList<E> heap,T comparator){

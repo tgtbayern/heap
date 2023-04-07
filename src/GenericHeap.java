@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 
-public interface GenericHeap<E> {
+public interface GenericHeap<E,T extends Comparator<E>> {
     public int parent(int i);
     public int left(int i);
     public int right(int i);
