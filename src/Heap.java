@@ -21,7 +21,7 @@ public class Heap<E,T extends Comparator<E>>{
         return 2*i+1;
     }
 
-    public void minheapfiy(ArrayList<E> heap,int i){
+    public void minHeapfiy(ArrayList<E> heap, int i){
         int smallest;
         int left = left(i);
         int right = right(i);
@@ -35,12 +35,12 @@ public class Heap<E,T extends Comparator<E>>{
             E temp = heap.get(i);
             heap.set(i,heap.get(smallest));
             heap.set(smallest,temp);
-            minheapfiy(heap,smallest);
+            minHeapfiy(heap,smallest);
         }
     }
     public void build(){
         for(int i=heap.size()-1;i>=1;i--)
-            minheapfiy(heap,i);
+            minHeapfiy(heap,i);
     }
 
     public void insert(E element){
@@ -50,7 +50,7 @@ public class Heap<E,T extends Comparator<E>>{
 
     public void delete(int i){
         heap.remove(i);
-        minheapfiy(heap,i);
+        minHeapfiy(heap,i);
     }
 
     public boolean isEmpty(){
@@ -66,7 +66,7 @@ public class Heap<E,T extends Comparator<E>>{
             array.set(i,array.get(1));
             array.set(1,temp);
             result.add(array.remove(i));
-            minheapfiy(array,1);
+            minHeapfiy(array,1);
         }
         return result;
     }
