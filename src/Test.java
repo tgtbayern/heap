@@ -12,20 +12,9 @@ public class Test {
      The start method initializes Employee objects, creates a PriorityQueue object, and tests its functionality.
      */
     public static void start(){
-        Employee a=new Employee("a",500);
-        Employee b=new Employee("b",400);
-        Employee c=new Employee("c",300);
-        Employee d=new Employee("d",200);
-        Employee e=new Employee("e",100);
         ArrayList<Employee> array=new ArrayList<>();
         CompareForPayRate comparator=new CompareForPayRate();
         PriorityQueue priorityQueue=new PriorityQueue<>(array,comparator);
-        ArrayList<Employee> sort;
-        priorityQueue.insert(a);
-        priorityQueue.insert(e);
-        priorityQueue.insert(d);
-        priorityQueue.insert(c);
-        priorityQueue.insert(b);
         creat(priorityQueue);
         display(priorityQueue);
     }
