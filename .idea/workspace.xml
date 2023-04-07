@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14cd4b9e-ba4f-4cda-ba1c-11a9de22031a" name="变更" comment="">
+    <list default="true" id="14cd4b9e-ba4f-4cda-ba1c-11a9de22031a" name="变更" comment="generic interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompareForName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompareForName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompareForPayRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompareForPayRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PriorityQueue.java" afterDir="false" />
     </list>
@@ -125,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680790073892</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="generic interface">
+      <created>1680888043154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680888043154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +156,7 @@
     <MESSAGE value="get message from txt" />
     <MESSAGE value="basic requirement has been completed" />
     <MESSAGE value="change for test class" />
-    <option name="LAST_COMMIT_MESSAGE" value="change for test class" />
+    <MESSAGE value="generic interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="generic interface" />
   </component>
 </project>
